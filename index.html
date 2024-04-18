@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>edem</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Обратный отсчёт</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="preloader">
-    <p>Loading...</p> <!-- Замени текст "Loading..." на свое сообщение о загрузке -->
-  </div>
-  
-
-  <div class="text">
-    Passengers®
-    <br><br>
-    instagram
-    <br>
-    behance
-    <br>
-    aee@pssngrs.xyz
-  </div>
-  <div class="passengers">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.471/build/spline-viewer.js"></script>
-    <spline-viewer loading-anim url="https://prod.spline.design/6ZnB-lvaxgC4w1D4/scene.splinecode"></spline-viewer>
-  </div>
-
-  <script>
-    // По окончании загрузки страницы
-    window.addEventListener("load", function () {
-      var preloader = document.querySelector(".preloader");
-      preloader.style.display = "none";
-    });
-  </script>  
-
+    <div id="countdown">
+        <div>
+            <p>Года</p>
+            <div class="time" id="years">0 Года</div>
+        </div>
+       <div>
+            <p>Месяца</p>
+            <div class="time" id="months">0 Месяцы</div>
+       </div>
+       <div>
+            <p>Дни</p>
+            <div class="time" id="days">0 Дни</div>
+       </div>
+       <div>
+            <p>Часы</p>
+            <div class="time" id="hours">0 Часы</div>
+       </div>
+       <div>
+            <p>Минуты</p>
+            <div class="time" id="minutes">0 Минуты</div>
+       </div>
+       <div>
+            <p>Секунды</p>
+            <div class="time" id="seconds">0 Секунды</div>
+       </div>
+        
+       
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
